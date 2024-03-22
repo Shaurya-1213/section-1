@@ -17,20 +17,27 @@
       font-family: Roboto;
 
       display:flex;
-      justify-content:center;
+      padding: 100px 0;
+      box-sizing: border-box;
+    }
+
+    header div{
+      width: 100%;
+      /* border: 2px solid red; */
     }
     .page-title{
+      /* text-align: center; */
       justify-content: end;
-      margin:100px -300px 0 500px;
-      color:rgb(113, 42, 0);
+      /* margin:100px -300px 0 500px; */
+      color:#712a00;
     }
     body{
       margin:0;
     }
     .paragraph-title{
       color:rgb(37, 5, 5);
-      width:500px;
-      margin-left: 500px;
+      /* width:500px; */
+      /* margin-left: 500px; */
     }
     .card-container{
       display: flex;
@@ -43,30 +50,88 @@
       border-radius: 10px;
       padding:20px;  
     }
+    .feature-card{
+      /*border:2px solid rgb(95, 29, 29);*/
+      padding:50px;
+      text-align: center;
+      border-radius: 20px;
+      box-shadow: 3px 3px 5px 1px #534263;
+    }
+    .feature-card:hover{
+      background:rgb(152, 87, 26);
+      color:rgb(58, 7, 7);  
+    }
+    .card-container{
+      display:flex;
+      column-gap:20px;
+    }
+    .section-title{
+      text-align: center;
+      font-family: roboto;
+      font-size: 50px;
+    }
+    .section-container{
+      margin:0 200px;
+    }
+    .text-input, .text-input-area{
+      width:100%;
+      margin-bottom:30px;
+      padding:10px;
+      box-sizing: border-box;
+    }
   </style>
 </head>
 <body>
     
   <header>
+    <div></div>
     <div>
       <h1 class="page-title">Creating A Bright Future </h1>
       <p class="paragraph-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, exercitationem nihil. Porro laboriosam eaque, neque fugiat deleniti tempora harum saepe blanditiis quia tenetur ea, voluptatibus perferendis.</p>
     </div>
   </header>
 
-  <Section>
-    <div class="card-container">
-      <div class="card-title">
-      <i class="fa-solid fa-truck-fast fa-3x"></i>
-      <h1>card heading</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, reiciendis. Quaerat odio odit eveniet quos.</p>
+  
+
+  <section >
+    <div class="section-container">
+      <h3 class="section-title">Our Features</h3>
+      <div class="card-container">
+
+        <div class="feature-card">
+          <i class="fa-solid fa-truck-fast fa-5x"></i>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere esse animi magni maxime libero ex.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fa-solid fa-truck-fast fa-5x"></i>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere esse animi magni maxime libero ex.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fa-solid fa-truck-fast fa-5x"></i>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere esse animi magni maxime libero ex.</p>
+        </div>
       </div>
     </div>
-  </Section>
+  </section>
 
-  <section class="section-video">
-    <div class="video">
-      <video autoplay controls src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_i6tbapxcxwu1pim6d8tal35d.mp4" width="200"></video>
+  <section>
+    <div class="section-container">
+      <h3 class="section-title">Contact Us</h3>
+
+      <form action="">
+
+        <label for="">Full Name</label>
+        <input type="text" class="text-input" id="name">
+
+        <label for="email">Email Address</label>
+        <input type="email" class="text-input" id="email">
+
+        <label for="message">Message</label>
+        <textarea type="text" class="text-input-area" id="message"></textarea>
+
+        <button type="submit" class="form-btn">Submit</button>
+      </form>
+
     </div>
   </section>
 
